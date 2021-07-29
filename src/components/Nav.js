@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../App.scss";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <div>
       <nav className="nav-links">
@@ -12,7 +12,7 @@ const Nav = () => {
             <Link to="/">Jogos</Link>
           </li>
           <li>
-            <Link to="/Cart">Carrinho</Link>
+            <Link to="/Cart">Carrinho ({props.cartItems})</Link>
           </li>
         </ul>
       </nav>

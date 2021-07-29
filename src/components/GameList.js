@@ -8,7 +8,7 @@ const GameList = (props) => {
     <div className="games-container">
       {Games.map((game, index) => (
         <div key={index} className="gridElement">
-          <Game name={game.name} image={game.image} />
+          <Game game={game} addCartItem={props.addCartItem} />
         </div>
       ))}
     </div>

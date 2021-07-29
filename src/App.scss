@@ -6,12 +6,12 @@
 }
 
 $base-gray: rgb(31, 30, 31);
-$base-white: whitesmoke;
+$base-white: white;
 $base-blue: #3b99c4;
 
 .App {
   font-family: "Poppins", sans-serif;
-  background: $base-gray;
+  background: $base-white;
   min-height: 100vh;
 }
 .nav-links {
@@ -31,7 +31,7 @@ $base-blue: #3b99c4;
   }
   a {
     text-decoration: none;
-    color: $base-white;
+    color: $base-blue;
     font-size: 3vmin;
     font-weight: 500;
   }
@@ -56,4 +56,85 @@ $base-blue: #3b99c4;
   align-items: flex-end;
   text-align: center;
   grid-row-gap: 40px;
+}
+.game-title {
+  font-size: 3vmin;
+}
+.game-image {
+  width: 16vw;
+}
+.game-price {
+  font-size: 2.5vmin;
+}
+.add-btn {
+  width: 250px;
+  border: 1px solid black;
+  background: $base-blue;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+.add-btn:hover {
+  filter: brightness(1.5);
+}
+.cart-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cart-items {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.cart-item {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.cart-game-title {
+  font-size: 2vmin;
+}
+.cart-game-image {
+  width: 10vw;
+}
+.cart-game-price {
+  font-size: 1.8vmin;
+}
+.remove-btn {
+  width: 150px;
+  border: 1px solid black;
+  background: rgb(133, 66, 66);
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+.remove-btn:hover {
+  filter: brightness(1.5);
+}
+.return-btn {
+  width: 150px;
+  border: 1px solid black;
+  background: $base-blue;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+.return-btn:hover {
+  filter: brightness(0.5);
 }
