@@ -29,7 +29,7 @@ const Cart = (props) => {
   } else
     return (
       <>
-        <h1>Seu carrinho</h1>
+        <h1 className="cart-title">Seu carrinho</h1>
         <div className="cart-container">
           <div className="cart-items">
             {props.cartItems.map((item, index) => (

@@ -45,9 +45,13 @@ $base-blue: #3b99c4;
     color: $base-blue;
   }
 }
-.loading {
-  color: $base-white;
-  text-align: center;
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter-select {
+  width: 280px;
 }
 .games-container {
   margin-top: 10vh;
@@ -86,7 +90,10 @@ $base-blue: #3b99c4;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.cart-title {
+  text-align: center;
 }
 .cart-items {
   display: grid;
