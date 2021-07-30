@@ -1,5 +1,5 @@
 import "../App.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 
 import Games from "../products.json";
@@ -7,7 +7,7 @@ import Game from "./Game";
 
 const GameList = (props) => {
   const options = [
-    { value: "alphabet", label: "Alfabética" },
+    { value: "alphabet", label: "Ordem alfabética" },
     { value: "price", label: "Preço(Crescente)" },
     { value: "score", label: "Pontuação(Decrescente)" },
   ];

@@ -11,7 +11,7 @@ const CartItem = (props) => {
         <h5 className="cart-game-price">R${props.game.price}</h5>
         <button
           className="remove-btn"
-          onClick={() => props.removeCartItem(props.game.id)}
+          onClick={() => props.removeCartItem(props.index)}
         >
           Remover
         </button>

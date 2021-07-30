@@ -42,7 +42,7 @@ $base-blue: #3b99c4;
   }
 
   a:hover {
-    color: $base-blue;
+    filter: brightness(0.5);
   }
 }
 .filter {
@@ -51,10 +51,11 @@ $base-blue: #3b99c4;
   align-items: center;
 }
 .filter-select {
-  width: 280px;
+  width: 25vmax;
 }
 .games-container {
   margin-top: 10vh;
+  margin: 50px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   align-items: flex-end;
@@ -65,13 +66,16 @@ $base-blue: #3b99c4;
   font-size: 3vmin;
 }
 .game-image {
-  width: 16vw;
+  width: 30vmin;
 }
 .game-price {
   font-size: 2.5vmin;
 }
+.cart-icon {
+  width: 10vmin;
+}
 .add-btn {
-  width: 250px;
+  width: 23vmin;
   border: 1px solid black;
   background: $base-blue;
   cursor: pointer;
@@ -105,16 +109,16 @@ $base-blue: #3b99c4;
   align-items: center;
 }
 .cart-game-title {
-  font-size: 2vmin;
+  font-size: 3.2vmin;
 }
 .cart-game-image {
-  width: 10vw;
+  width: 14vw;
 }
 .cart-game-price {
-  font-size: 1.8vmin;
+  font-size: 2.5vmin;
 }
 .remove-btn {
-  width: 150px;
+  width: 14vmin;
   border: 1px solid black;
   background: rgb(133, 66, 66);
   cursor: pointer;
@@ -129,8 +133,16 @@ $base-blue: #3b99c4;
 .remove-btn:hover {
   filter: brightness(1.5);
 }
+.order-summary {
+  h1 {
+    font-size: 3.5vmin;
+  }
+  h3 {
+    font-size: 2.5vmin;
+  }
+}
 .return-btn {
-  width: 150px;
+  width: 20vmin;
   border: 1px solid black;
   background: $base-blue;
   cursor: pointer;
@@ -144,4 +156,54 @@ $base-blue: #3b99c4;
 }
 .return-btn:hover {
   filter: brightness(0.5);
+}
+@media (max-width: 500px) {
+  .games-container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    margin: 10px;
+  }
+
+  .game-title {
+    font-size: 4vmin;
+  }
+  .game-image {
+    width: 35vmin;
+  }
+  .game-price {
+    font-size: 3.5vmin;
+  }
+  .add-btn {
+    width: 35vmin;
+  }
+  .cart-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-game-title {
+    font-size: 4vmin;
+    word-wrap: break-word;
+  }
+  .cart-game-image {
+    width: 20vmin;
+  }
+  .cart-game-price {
+    font-size: 3.5vmin;
+  }
+  .remove-btn {
+    width: 10vmax;
+  }
+  .order-summary {
+    margin: 40px;
+    text-align: center;
+
+    h1 {
+      font-size: 5.5vmin;
+    }
+    h3 {
+      font-size: 4.5vmin;
+    }
+  }
 }
