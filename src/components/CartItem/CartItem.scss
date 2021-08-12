@@ -1,0 +1,47 @@
+@import "../../master";
+
+.cart-item {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.cart-game-title {
+  font-size: 3.2vmin;
+}
+.cart-game-image {
+  width: 14vw;
+}
+.cart-game-price {
+  font-size: 2.5vmin;
+}
+.remove-btn {
+  width: 14vmin;
+  border: 1px solid black;
+  background: rgb(133, 66, 66);
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+.remove-btn:hover {
+  filter: brightness(1.5);
+}
+@media (max-width: 500px) {
+  .cart-game-title {
+    font-size: 4vmin;
+    word-wrap: break-word;
+  }
+  .cart-game-image {
+    width: 20vmin;
+  }
+  .cart-game-price {
+    font-size: 3.5vmin;
+  }
+  .remove-btn {
+    width: 10vmax;
+  }
+}

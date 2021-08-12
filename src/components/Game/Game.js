@@ -1,4 +1,4 @@
-import "../App.scss";
+import "./Game.scss";
 import React from "react";
 
 const Game = (props) => {

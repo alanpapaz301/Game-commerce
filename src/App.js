@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
-import Nav from "./components/Nav";
-import GameList from "./components/GameList";
-import Cart from "./components/Cart";
+import Nav from "./components/Nav/Nav";
+import GameList from "./components/GameList/GameList";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   const [cart, setCart] = useState([]);

@@ -1,4 +1,4 @@
-import "../App.scss";
+import "./CartItem.scss";
 import React from "react";
 
 const CartItem = (props) => {

@@ -1,9 +1,8 @@
-import "../App.scss";
+import "./GameList.scss";
 import React, { useState } from "react";
 import Select from "react-select";
-
-import Games from "../products.json";
-import Game from "./Game";
+import Games from "../../products.json";
+import Game from "../Game/Game";
 
 const GameList = (props) => {
   const options = [

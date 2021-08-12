@@ -1,7 +1,7 @@
-import "../App.scss";
+import "./Cart.scss";
 import React from "react";
 import { Link } from "react-router-dom";
-import CartItem from "./CartItem";
+import CartItem from "../CartItem/CartItem";
 
 const Cart = (props) => {
   let values = { total: 0, frete: 0 };
