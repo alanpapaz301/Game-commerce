@@ -18,6 +18,8 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 .order-summary {
+  display: flex;
+  flex-direction: column;
   h1 {
     font-size: 3.5vmin;
   }
@@ -39,6 +41,23 @@
   color: white;
 }
 .return-btn:hover {
+  filter: brightness(0.5);
+}
+.finish-btn {
+  margin-top: 20px;
+  width: 22vmin;
+  border: 1px solid black;
+  background: $base-blue-dark;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+}
+.finish-btn:hover {
   filter: brightness(0.5);
 }
 @media (max-width: 500px) {

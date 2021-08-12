@@ -8,7 +8,7 @@ const Cart = (props) => {
   if (props.cartItems.length !== 0) {
     let items = 0;
     let frete = 0;
-    props.cartItems.map((item) => (items += item.price));
+    props.cartItems.map((item) => (items += item.price * item.quantity));
     if (items >= 250) {
       frete = 0;
     } else {
@@ -56,6 +56,9 @@ const Cart = (props) => {
                 Voltar as compras
               </button>
             </Link>
+            <button className="finish-btn" type="button">
+              Finalizar compra
+            </button>
           </div>
         </div>
       </>
