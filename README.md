@@ -27,4 +27,5 @@ Room for improvement:
 - Mobile layout improvements
 - Toggle for different languages, currently only Brazilian Portuguese
 
-![Example screenshot](./public/assets.screenshots/screenshot1.png)
+![Example screenshot](./public/assets/screenshots/screenshot1.png)
+public\assets\screenshots\screenshot1.png
