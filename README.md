@@ -28,4 +28,7 @@ Room for improvement:
 - Toggle for different languages, currently only Brazilian Portuguese
 
 ![Example screenshot](./public/assets/screenshots/screenshot1.png)
-public\assets\screenshots\screenshot1.png
+![Example screenshot](./public/assets/screenshots/screenshot2.png)
+![Example screenshot](./public/assets/screenshots/screenshot3.png)
+![Example screenshot](./public/assets/screenshots/screenshot4.png)
+![Example screenshot](./public/assets/screenshots/screenshot5.png)
