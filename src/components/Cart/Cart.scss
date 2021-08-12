@@ -16,10 +16,12 @@
 .cart-items {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: flex-end;
 }
 .order-summary {
   display: flex;
   flex-direction: column;
+
   h1 {
     font-size: 3.5vmin;
   }
@@ -60,7 +62,7 @@
 .finish-btn:hover {
   filter: brightness(0.5);
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .cart-container {
     margin-top: 50px;
     display: flex;
@@ -68,6 +70,8 @@
     align-items: center;
   }
   .order-summary {
+    align-items: center;
+    margin-top: 150px;
     margin: 40px;
     text-align: center;
 

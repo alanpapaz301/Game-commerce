@@ -9,10 +9,15 @@ const CartItem = (props) => {
         src={`assets/${props.game.image}`}
         alt={props.game.name}
       ></img>
-      <div>
+      <div className="cart-item-info">
         <h5 className="cart-game-title">{props.game.name}</h5>
 
-        <h5 className="cart-game-price">R${props.game.price}</h5>
+        <h5 className="cart-game-price">
+          {props.game.price.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </h5>
         <h5 className="cart-game-quantity">
           Quantidade: {props.game.quantity}
         </h5>

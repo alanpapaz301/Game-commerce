@@ -41,16 +41,32 @@ const Cart = (props) => {
           </div>
           <div className="order-summary">
             <h1>Resumo do pedido</h1>
-            <h3>Preço dos items: R${values.items.toFixed(2)}</h3>
+            <h3>
+              Preço dos items:{" "}
+              {values.items.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </h3>
             <h3>
               {values.frete === 0
                 ? "Frete Grátis!"
-                : `Frete: R$${values.frete} - 
-                Faltam R$${Math.ceil(
-                  250 - values.items
-                )} para ganhar frete grátis!`}
+                : `Frete: ${values.frete.toLocaleString("pt-BR", {
+                    style: "currency",
+                    currency: "BRL",
+                  })} - 
+                Faltam ${(250 - values.items).toLocaleString("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                })} para ganhar frete grátis!`}
             </h3>
-            <h3>Total: R${values.total.toFixed(2)}</h3>
+            <h3>
+              Total:{" "}
+              {values.total.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </h3>
             <Link to="/">
               <button className="return-btn" type="button">
                 Voltar as compras
