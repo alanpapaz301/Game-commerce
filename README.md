@@ -25,3 +25,6 @@ Room for improvement:
 - Use an API instead of pulling data from a static JSON file
 - Individual pages for each game with more detailed information
 - Mobile layout improvements
+- Toggle for different languages, currently only Brazilian Portuguese
+
+![Example screenshot](./public/assets.screenshots/screenshot1.png)

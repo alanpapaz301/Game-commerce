@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
 
 const Cart = (props) => {
+  const freeShipping = 250;
+  const itemShippingCost = 10;
   let values = { total: 0, frete: 0 };
   if (props.cartItems.length !== 0) {
     let items = 0;
     let frete = 0;
     props.cartItems.map((item) => (items += item.price * item.quantity));
-    if (items >= 250) {
+    if (items >= freeShipping) {
       frete = 0;
     } else {
-      frete = props.cartItems.length * 10;
+      frete = props.cartItems.length * itemShippingCost;
     }
     values = { items: items, frete: frete, total: items + frete };
   }

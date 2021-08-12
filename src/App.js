@@ -20,6 +20,7 @@ function App() {
       setCart(cart2);
     }
     setcartQuantity(cartQuantity + 1);
+    alert("Item adicionado ao carrinho com sucesso!");
   };
 
   const removeCartItem = (index) => {
@@ -32,6 +33,7 @@ function App() {
       setCart(cart2);
     }
     setcartQuantity(cartQuantity - 1);
+    alert("Item removido do carrinho");
   };
 
   return (
